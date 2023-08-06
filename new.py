@@ -1,13 +1,12 @@
-# user = input('Enter here : ')
+weather = 'strom'
 
-# if user.isnumeric():
-#     print('you enter a number')
-# if user.isalpha():
-#     print('you enter a string')
-# if user.isalnum():
-#     print('you enter a alpha numeric')
-# if user.islower():
-#     print('you enter a lower case string') 
-
-user = 'Aditya Gupta'
-print(user.endswith('pta'))
+if weather == 'rainy':
+    print('bring raincoat')
+elif weather == 'sunny':
+    print('grab glasses')
+elif weather == 'cloudy':
+    print('you take umbrella may be rain today')
+elif weather == 'strom':
+    print('stay inside')  
+else :
+    print('invalid input')                
