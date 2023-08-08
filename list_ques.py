@@ -1,5 +1,6 @@
 a = [1,1,2,3,4,5,6,1,3,4,8,9,4,4,2]
 
+
 search = 1
 
 cnt = a.count(search)
@@ -59,4 +60,5 @@ for nm in fullname:
     words = nm.split()
     shortname.append(words[0][0] + words[-1][0])
 print(shortname)
+
 
