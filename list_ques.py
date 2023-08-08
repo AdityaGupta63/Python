@@ -43,7 +43,7 @@ for c in color:
 print(filter_opt_ane)
 
 
-mapping
+#mapping
 
 a = [1,2,3,4,5,6,7,8,9,10]
 a2 = []
