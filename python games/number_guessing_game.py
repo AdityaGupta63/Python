@@ -1,24 +1,25 @@
 import random
 
-def guess_number():
-    number_to_guess = random.randint(1,50)
-    attempts = 0
-    guessed = False
+print('Welcome to the Number Guessing Game.')
 
-    print('welcomne to the number guessing game !')
-    print("T'm thinking a number between 1 to 50 can you guess it ?")
+lower = int(input('Enter the lower number you want to select : '))
+high = int(input('Enter the higher number you want to select : '))
 
-    while not guessed:
-        user_guess = int(input('Enter your num here : '))
-        attempts += 1
+win_num = random.randint(lower, high)
+attempts = 0
 
-        if user_guess < number_to_guess:
-            print('Too low guess higher !')
-        elif user_guess > number_to_guess:
-            print('Too high guess lower !')
-        else:
-            guessed = True
-            print(f'congratulation ! you guessed the number {number_to_guess} in {attempts} attempts ')
+print(f'Now you guess a number between {lower} to {high}.')
 
-
-guess_number()
+while True:
+    attempts +=1
+    user_guess = int(input('Enter your guess here : '))
+    if user_guess > win_num:
+        print('Your guess is high!')
+    elif user_guess < win_num:
+        print('Your guess is low!')
+    elif user_guess == win_num:
+        print(f'Congrats your guess {user_guess} is right...!') 
+        print(f'You took {attempts} attempts to guess right number.')
+        break   
+    else:
+        print('Invalid input!')
