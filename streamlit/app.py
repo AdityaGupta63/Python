@@ -33,7 +33,9 @@ elif user_gender == 'Not to tell':
 else:
      pass
 
-btn = st.button('Submit')
+submit_btn = st.button('Submit')
 
-if btn:
+if submit_btn:
      st.markdown(f'Hello {honor} {user_fname}. We recieve your form and now we can able to track your good vibes here in our page. If we had any query so we can mail you at {user_email}.')
+
+     cnt_btn = st.button('Continue')
