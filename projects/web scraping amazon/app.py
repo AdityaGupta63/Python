@@ -18,4 +18,4 @@ link = requests.get(url, headers=Header)
 
 soup = BeautifulSoup(link.content, 'html.parser')
 
-st.title(soup.find_all(id='productTitle'))
+st.title(soup.find_all(id='productTitle')).title
